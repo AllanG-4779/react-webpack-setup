@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "react without cli",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
