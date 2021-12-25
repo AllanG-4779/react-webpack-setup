@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Parent from "./Components/Parent";
+
+import Counter2 from "./Components/Counter2";
+import Counter4 from "./Components/Counter4";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Parent
+        value={2}
+        render={(counter) => {
+          return <Counter2 counter={counter} />;
+        }}
+      />
+      <Parent
+        value={4}
+        render={(counter) => {
+          return <Counter4 counter={counter} />;
+        }}
+      />
     </div>
   );
 }
